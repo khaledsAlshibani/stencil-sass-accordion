@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap');
+
+$light-gray: #ddd;
+
+:host {
+  display: block;
+}
+
+.accordion {
+  font-family: 'Inter', sans-serif;
+  padding: 30px;
+  border-bottom: var(--border-width) solid var(--border-color);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid $light-gray;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+
+  &__button {
+    display: block;
+    all: unset;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &-text {
+      font-family: inherit;
+      margin: 0;
+      font-weight: 800;
+      padding-right: 30px;
+      width: calc(100% - 30px); // 100% - svg width
+    }
+
+    svg {
+      width: 30px;
+      fill: inherit;
+    }
+  }
+
+  &__panel {
+    padding-top: 0;
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+
+    &-text {
+      font-family: inherit;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+  }
+
+  &--open &__panel {
+    visibility: visible;
+    padding-top: 20px;
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
