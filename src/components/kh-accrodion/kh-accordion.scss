@@ -19,9 +19,8 @@ $light-gray: #ddd;
   background-color: #fff;
 
   &__button {
-    display: block;
     all: unset;
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -31,6 +30,7 @@ $light-gray: #ddd;
     transition: all 0.3s ease-in-out;
 
     &-text {
+      font-size: inherit;
       font-family: inherit;
       margin: 0;
       font-weight: 800;
@@ -54,7 +54,7 @@ $light-gray: #ddd;
     &-text {
       font-family: inherit;
       margin: 0;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.75;
     }
   }

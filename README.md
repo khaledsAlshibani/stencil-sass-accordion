@@ -30,7 +30,7 @@
 Alternatively, include the component directly from a CDN:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/stencil-sass-accordion@0.0.3/dist/stencil-sass-accordion/stencil-sass-accordion.esm.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/stencil-sass-accordion@0.0.4/dist/stencil-sass-accordion/stencil-sass-accordion.esm.js"></script>
 ```
 
 ### Integration in HTML
@@ -59,7 +59,7 @@ For a quick start, check out the example below using CDN:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" src="https://cdn.jsdelivr.net/npm/stencil-sass-accordion@0.0.3/dist/stencil-sass-accordion/stencil-sass-accordion.esm.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/stencil-sass-accordion@0.0.4/dist/stencil-sass-accordion/stencil-sass-accordion.esm.js"></script>
   <title>Accordion Example</title>
 </head>
 <body>
