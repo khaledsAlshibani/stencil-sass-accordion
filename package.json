@@ -12,7 +12,7 @@
   "unpkg": "dist/stencil-sass-accordion/stencil-sass-accordion.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/khaledsAlshibani/stencil-sass-accordion.git"
   },
   "files": [
     "dist/",
