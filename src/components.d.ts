@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface KhAccrodion {
+    interface KhAccordion {
         "buttonTitle": string;
         "panelText": string;
     }
@@ -26,11 +26,11 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLKhAccrodionElement extends Components.KhAccrodion, HTMLStencilElement {
+    interface HTMLKhAccordionElement extends Components.KhAccordion, HTMLStencilElement {
     }
-    var HTMLKhAccrodionElement: {
-        prototype: HTMLKhAccrodionElement;
-        new (): HTMLKhAccrodionElement;
+    var HTMLKhAccordionElement: {
+        prototype: HTMLKhAccordionElement;
+        new (): HTMLKhAccordionElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -39,12 +39,12 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "kh-accrodion": HTMLKhAccrodionElement;
+        "kh-accordion": HTMLKhAccordionElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface KhAccrodion {
+    interface KhAccordion {
         "buttonTitle"?: string;
         "panelText"?: string;
     }
@@ -63,7 +63,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "kh-accrodion": KhAccrodion;
+        "kh-accordion": KhAccordion;
         "my-component": MyComponent;
     }
 }
@@ -71,7 +71,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "kh-accrodion": LocalJSX.KhAccrodion & JSXBase.HTMLAttributes<HTMLKhAccrodionElement>;
+            "kh-accordion": LocalJSX.KhAccordion & JSXBase.HTMLAttributes<HTMLKhAccordionElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

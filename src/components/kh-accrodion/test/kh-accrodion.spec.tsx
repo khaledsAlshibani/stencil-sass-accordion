@@ -1,18 +1,18 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { KhAccrodion } from '../kh-accrodion';
+import { KhAccordion } from '../kh-accordion';
 
-describe('kh-accrodion', () => {
+describe('kh-accordion', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [KhAccrodion],
-      html: `<kh-accrodion></kh-accrodion>`,
+      components: [KhAccordion],
+      html: `<kh-accordion></kh-accordion>`,
     });
     expect(page.root).toEqualHtml(`
-      <kh-accrodion>
+      <kh-accordion>
         <mock:shadow-root>
           <slot></slot>
         </mock:shadow-root>
-      </kh-accrodion>
+      </kh-accordion>
     `);
   });
 });

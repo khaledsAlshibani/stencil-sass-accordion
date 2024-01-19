@@ -1,12 +1,12 @@
 import { Component, Host, Prop, State, h } from '@stencil/core';
 
 @Component({
-	tag: 'kh-accrodion',
-	styleUrl: 'kh-accrodion.scss',
+	tag: 'kh-accordion',
+	styleUrl: 'kh-accordion.scss',
 	shadow: true,
 })
 
-export class KhAccrodion {
+export class KhAccordion {
 
 	@Prop() buttonTitle: string;
 	@Prop() panelText: string;
